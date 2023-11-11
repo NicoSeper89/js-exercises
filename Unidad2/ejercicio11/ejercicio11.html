@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container p-5">
+      <form id="form">
+        <h2 class="text-primary">
+          <ins>Calcular suma y promedio.</ins>
+        </h2>
+        <div class="form-group row gy-5">
+          <div class="col-md-6 ">
+            <label for="numberInput01" class="form-label">Número 1</label>
+            <input
+              type="text"
+              class="form-control numberInput"
+              placeholder="ingrese un número"
+              pattern="[0-9]+(\.[0-9]+)?"
+              id="numberInput01"
+              required
+            />
+          </div>
+          <div class="col-md-6">
+            <label for="numberInput02" class="form-label">Número 2</label>
+            <input
+              type="text"
+              class="form-control numberInput"
+              placeholder="ingrese un número"
+              pattern="[0-9]+(\.[0-9]+)?"
+              id="numberInput02"
+              required
+            />
+          </div>
+          <div class="col-md-6">
+            <label for="numberInput03" class="form-label">Número 3</label>
+            <input
+              type="text"
+              class="form-control numberInput"
+              id="numberInput03"
+              placeholder="ingrese un número"
+              pattern="[0-9]+(\.[0-9]+)?"
+              required
+            />
+          </div>
+          <div class="col-md-6">
+            <label for="numberInput04" class="form-label">Número 4</label>
+            <input
+              type="text"
+              class="form-control numberInput"
+              id="numberInput04"
+              placeholder="ingrese un número"
+              pattern="[0-9]+(\.[0-9]+)?"
+              required
+            />
+          </div>
+        </div>
+        <button type="reset" class="btn btn-secondary">Reset</button>
+        <button type="submit" class="btn btn-primary">Calcular</button>
+        <div class="alert alert-secondary mt-3" role="alert" id="message">
+          <span> Esperando datos </span>
+        </div>
+      </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="ejercicio11.js"></script>
+  </body>
+</html>
