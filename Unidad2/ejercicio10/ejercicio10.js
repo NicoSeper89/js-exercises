@@ -41,6 +41,6 @@ form.addEventListener("submit", function (e) {
 });
 
 form.addEventListener("reset", function (event) {
-  message.innerHTML = "<span> Esperando dato. </span>";
+  message.innerHTML = "<span> Esperando datos. </span>";
   message.className = "alert alert-secondary mt-3";
 });

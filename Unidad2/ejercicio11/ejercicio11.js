@@ -6,13 +6,14 @@ function getTotal(numbers) {
 
   for (let i = 0; i < numbers.length; i++) {
     total += parseFloat(numbers.item(i).value);
-    numbers.item(i).value = ""
+    numbers.item(i).value = "";
   }
 
   return total;
 }
 
 const form = document.getElementById("form");
+const messege = document.getElementById("message");
 
 form.addEventListener("submit", function (e) {
   e.preventDefault();
@@ -20,8 +21,6 @@ form.addEventListener("submit", function (e) {
   const htmlNumberInputs = document.getElementsByClassName("numberInput");
 
   const total = getTotal(htmlNumberInputs);
-
-  const messege = document.getElementById("message");
 
   messege.innerHTML =
     "Suma: " +
@@ -32,5 +31,10 @@ form.addEventListener("submit", function (e) {
 
   messege.classList = "alert alert-success mt-3";
 
-  htmlNumberInputs.value = ""
+  htmlNumberInputs.value = "";
+});
+
+form.addEventListener("reset", function (event) {
+  message.innerHTML = "<span> Esperando datos. </span>";
+  message.className = "alert alert-secondary mt-3";
 });
