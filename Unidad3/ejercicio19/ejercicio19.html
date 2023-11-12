@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container p-5">
+      <form id="form">
+        <h2 class="text-primary text-md-center">Operaciones básicas entre dos números</h2>
+        <div class="form-group row gy-3">
+          <div class="col-md-6">
+            <label for="number1Input" class="form-label">Número 1</label>
+            <input
+              type="text"
+              class="form-control"
+              pattern="-?\d+(\.\d+)?"
+              id="number1Input"
+              required
+            />
+          </div>
+          <div class="col-md-6">
+            <label for="number2Input" class="form-label">Número 2</label>
+            <input
+              type="text"
+              class="form-control"
+              pattern="-?\d+(\.\d+)?"
+              id="number2Input"
+              required
+            />
+          </div>
+          <div class="input-group col-md-12">
+            <label class="input-group-text" for="operatorSelectInput">Operación</label>
+            <select class="form-select" id="operatorSelectInput" required>
+              <option value="+">Suma (+)</option>
+              <option value="-">Resta (-)</option>
+              <option value="*">Multiplicación (*)</option>
+              <option value="/">División (/)</option>
+            </select>
+          </div>
+        </div>
+        <div class="pt-3">
+          <button type="reset" class="btn btn-secondary">Reset</button>
+          <button type="submit" class="btn btn-primary">Calcular</button>
+        </div>
+        <div class="alert alert-secondary mt-3" role="alert" id="message">
+          <span>Esperando dato. </span>
+        </div>
+      </form>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="ejercicio19.js"></script>
+  </body>
+</html>
