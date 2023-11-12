@@ -3,7 +3,7 @@ si el número es múltiplo de 3.
 */
 
 const form = document.getElementById("form");
-const messege = document.getElementById("message");
+const message = document.getElementById("message");
 
 form.addEventListener("submit", function (e) {
   e.preventDefault();
@@ -26,8 +26,8 @@ form.addEventListener("submit", function (e) {
     }
   }
 
-  messege.innerHTML = "<span>" + response + "</span>";
-  messege.className = "alert alert-" + colorBackground + " mt-3";
+  message.innerHTML = "<span>" + response + "</span>";
+  message.className = "alert alert-" + colorBackground + " mt-3";
 
   number = "";
 });

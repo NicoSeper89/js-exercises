@@ -9,7 +9,7 @@ final, calcular e informar el valor promedio de la hora del empleado.
 */
 
 const form = document.getElementById("form");
-const messege = document.getElementById("message");
+const message = document.getElementById("message");
 
 form.addEventListener("submit", function (e) {
   e.preventDefault();
@@ -26,7 +26,7 @@ form.addEventListener("submit", function (e) {
   const maximumSaleBonus = mostExpensiveValue.value / 2;
   const totalSalary = baseSalary + seniorityBonus + salesBonus + maximumSaleBonus;
 
-  messege.innerHTML =
+  message.innerHTML =
     "<span>Sueldo base: $" +
     baseSalary +
     "<br/>Bono por antigüedad: $" +
@@ -40,7 +40,7 @@ form.addEventListener("submit", function (e) {
     "<br/>Sueldo por hora con bonos incluidos: $" +
     (totalSalary / hours.value).toFixed(2) +
     "</span>";
-  messege.className = "alert alert-success mt-3";
+  message.className = "alert alert-success mt-3";
 
   valueByHour.value = "";
   hours.value = "";

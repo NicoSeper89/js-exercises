@@ -3,7 +3,7 @@ algoritmo para informar si el triángulo es equilátero, isósceles o escaleno
 */
 
 const form = document.getElementById("form");
-const messege = document.getElementById("message");
+const message = document.getElementById("message");
 
 form.addEventListener("submit", function (e) {
   e.preventDefault();
@@ -25,13 +25,13 @@ form.addEventListener("submit", function (e) {
     }
 
     response = "El triángulo es: " + response;
-    messege.className = "alert alert-succe  ss mt-3";
+    message.className = "alert alert-succe  ss mt-3";
   } else {
     response = "Ningún lado puede ser de 0";
-    messege.className = "alert alert-danger mt-3";
+    message.className = "alert alert-danger mt-3";
   }
 
-  messege.innerHTML = response;
+  message.innerHTML = response;
 });
 
 form.addEventListener("reset", function (e) {

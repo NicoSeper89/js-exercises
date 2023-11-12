@@ -12,7 +12,7 @@ indicando si su sueldo supera o no los u$s 4000.
 */
 
 const form = document.getElementById("form");
-const messege = document.getElementById("message");
+const message = document.getElementById("message");
 
 form.addEventListener("submit", function (e) {
   e.preventDefault();
@@ -33,7 +33,7 @@ form.addEventListener("submit", function (e) {
     salary = 3000 + hourlySalary * hours;
   }
 
-  messege.innerHTML =
+  message.innerHTML =
     "<span>Salario mensual: " +
     salary +
     "<br />El salario supera los 4000: " +

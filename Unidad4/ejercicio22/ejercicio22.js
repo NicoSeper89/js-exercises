@@ -3,7 +3,7 @@ si el número es múltiplo de 3, múltiplo 5, múltiplo de ambos o múltiplo de 
 */
 
 const form = document.getElementById("form");
-const messege = document.getElementById("message");
+const message = document.getElementById("message");
 
 form.addEventListener("submit", function (e) {
   e.preventDefault();
@@ -26,7 +26,7 @@ form.addEventListener("submit", function (e) {
     messageBackground = "danger";
   }
 
-  messege.innerHTML = response
+  message.innerHTML = response
   message.className = "alert alert-" + messageBackground + " mt-3";
 });
 

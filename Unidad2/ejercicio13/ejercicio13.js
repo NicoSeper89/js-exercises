@@ -6,7 +6,7 @@ mensual del empleado, teniendo en cuenta que se le asigna un bono mensual igual 
 */
 
 const form = document.getElementById("form");
-const messege = document.getElementById("message");
+const message = document.getElementById("message");
 
 form.addEventListener("submit", function (e) {
   e.preventDefault();
@@ -19,7 +19,7 @@ form.addEventListener("submit", function (e) {
   const seniorityBonus = (baseSalary * experience.value * 15) / 100;
   const totalSalary = baseSalary + seniorityBonus;
 
-  messege.innerHTML =
+  message.innerHTML =
     "<span>Sueldo base: $" +
     baseSalary +
     "<br/>Bono por antigüedad: $" +
@@ -27,7 +27,7 @@ form.addEventListener("submit", function (e) {
     "<br/>Sueldo total: $" +
     totalSalary +
     "</span>";
-  messege.className = "alert alert-success mt-3";
+  message.className = "alert alert-success mt-3";
 
   valueByHour.value = "";
   hours.value = "";

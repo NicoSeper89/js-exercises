@@ -13,7 +13,7 @@ function getTotal(numbers) {
 }
 
 const form = document.getElementById("form");
-const messege = document.getElementById("message");
+const message = document.getElementById("message");
 
 form.addEventListener("submit", function (e) {
   e.preventDefault();
@@ -22,14 +22,14 @@ form.addEventListener("submit", function (e) {
 
   const total = getTotal(htmlNumberInputs);
 
-  messege.innerHTML =
+  message.innerHTML =
     "Suma: " +
     total +
     "<br />" +
     "Promedio: " +
     total / htmlNumberInputs.length;
 
-  messege.classList = "alert alert-success mt-3";
+  message.classList = "alert alert-success mt-3";
 
   htmlNumberInputs.value = "";
 });

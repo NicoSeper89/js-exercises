@@ -3,7 +3,7 @@ un programa para calcular e informar la operación solicitada entre ambos númer
 */
 
 const form = document.getElementById("form");
-const messege = document.getElementById("message");
+const message = document.getElementById("message");
 
 form.addEventListener("submit", function (e) {
   e.preventDefault();
@@ -42,8 +42,8 @@ form.addEventListener("submit", function (e) {
     response = number1 + " " + operator + " " + number2 + " = " + response;
   }
 
-  messege.innerHTML = response;
-  messege.className = "alert alert-" + colorBackground + " mt-3";
+  message.innerHTML = response;
+  message.className = "alert alert-" + colorBackground + " mt-3";
 
 });
 

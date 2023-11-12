@@ -3,7 +3,7 @@ el valor ingresado es una vocal.
 */
 
 const form = document.getElementById("form");
-const messege = document.getElementById("message");
+const message = document.getElementById("message");
 
 form.addEventListener("submit", function (e) {
   e.preventDefault();
@@ -21,8 +21,8 @@ form.addEventListener("submit", function (e) {
     colorBackground = "danger";
   }
 
-  messege.innerHTML = "<span>" + response + "</span>";
-  messege.className = "alert alert-" + colorBackground + " mt-3";
+  message.innerHTML = "<span>" + response + "</span>";
+  message.className = "alert alert-" + colorBackground + " mt-3";
 
   document.getElementById("letterInput").value = "";
 });
