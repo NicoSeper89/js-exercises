@@ -8,8 +8,6 @@ otro bono igual al 15% del sueldo por año de antigüedad. Una vez obtenido el s
 final, calcular e informar el valor promedio de la hora del empleado.
 */
 
-function getTotal() {}
-
 const form = document.getElementById("form");
 const messege = document.getElementById("message");
 

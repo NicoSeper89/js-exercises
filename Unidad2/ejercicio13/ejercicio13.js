@@ -5,8 +5,6 @@ mensual del empleado, teniendo en cuenta que se le asigna un bono mensual igual 
 15% del sueldo por año de antigüedad.
 */
 
-function getTotal() {}
-
 const form = document.getElementById("form");
 const messege = document.getElementById("message");
 

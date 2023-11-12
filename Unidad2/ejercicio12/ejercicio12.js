@@ -2,8 +2,6 @@
 ingrese el valor de la hora y la cantidad de horas trabajadas en el mes. Realice un
 programa para calcular e informar el sueldo mensual del empleado.*/
 
-function getTotal() {}
-
 const form = document.getElementById("form");
 const messege = document.getElementById("message");
 

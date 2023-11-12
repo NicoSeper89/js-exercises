@@ -2,8 +2,6 @@
 si el número es cero, par o impar.
 */
 
-function getTotal() {}
-
 const form = document.getElementById("form");
 const messege = document.getElementById("message");
 

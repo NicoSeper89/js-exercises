@@ -6,8 +6,6 @@ Tenga en cuenta que el rango debe tener una diferencia mínima de 5 números
 enteros.
 */
 
-function getTotal() {}
-
 const form = document.getElementById("form");
 const messege = document.getElementById("message");
 

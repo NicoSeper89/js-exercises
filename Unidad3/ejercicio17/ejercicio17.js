@@ -2,8 +2,6 @@
 el valor ingresado es una vocal.
 */
 
-function getTotal() {}
-
 const form = document.getElementById("form");
 const messege = document.getElementById("message");
 

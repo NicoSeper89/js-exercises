@@ -2,8 +2,6 @@
 si el número es múltiplo de 3.
 */
 
-function getTotal() {}
-
 const form = document.getElementById("form");
 const messege = document.getElementById("message");
 
