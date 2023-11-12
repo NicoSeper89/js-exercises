@@ -12,8 +12,6 @@ form.addEventListener("submit", function (e) {
   const number2 = parseFloat(document.getElementById("number2Input").value);
   const operator = document.getElementById("operatorSelectInput").value;
 
-  console.log(number1, operator, number2)
-
   let response = "";
   let colorBackground = "success";
 
